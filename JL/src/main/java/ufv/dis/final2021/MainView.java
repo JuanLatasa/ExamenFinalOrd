@@ -1,4 +1,4 @@
-package com.vaadin;
+package ufv.dis.final2021;
 
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.notification.Notification;
