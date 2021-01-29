@@ -1,15 +1,14 @@
 package ufv.dis.final2021;
 
-import com.google.gson.Gson;
-import java.io.FileWriter;
+package vaadinarchetypeapplication.data.entity;
 
-// import java.io.IOException;
-import java.util.List;
+import javax.persistence.Entity;
 
- class DatosPersonas {
-     private Persona[] personas;
-}
-    class Persona {
+import vaadinarchetypeapplication.data.AbstractEntity;
+import java.time.LocalDate;
+
+@Entity
+public class Film extends AbstractEntity {
         private long ip_from;
         private long ip_to;
         private String country_code;
