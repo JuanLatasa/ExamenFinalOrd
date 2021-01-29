@@ -1,0 +1,9 @@
+{
+  "compatibilityMode": false,
+  "productionMode": false,
+  "npmFolder": "/Users/juanlatasareinoso/Desktop/examen/ExamenFinalOrd/JL",
+  "generatedFolder": "/Users/juanlatasareinoso/Desktop/examen/ExamenFinalOrd/JL/target/frontend",
+  "frontendFolder": "/Users/juanlatasareinoso/Desktop/examen/ExamenFinalOrd/JL/frontend",
+  "pnpm.enable": false,
+  "require.home.node": false
+}

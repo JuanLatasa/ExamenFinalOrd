@@ -1,2 +1,66 @@
 Creamos el archivo con nano
+ git add .
+git commit -m "+git.doc"
+juanlatasareinoso@MacBook-Pro-de-Juan ~/Desktop/examen/ExamenFinalOrd (main)$ git branch Temporal
+juanlatasareinoso@MacBook-Pro-de-Juan ~/Desktop/examen/ExamenFinalOrd (main)$ git checkout temporal
+ nano MisDatos.txt
+
+git add .
+juanlatasareinoso@MacBook-Pro-de-Juan ~/Desktop/examen/ExamenFinalOrd (Temporal)$ git commit -m "MD1"
+
+juanlatasareinoso@MacBook-Pro-de-Juan ~/Desktop/examen/ExamenFinalOrd (Temporal)$ git push origin Temporal 
+
+git add .
+juanlatasareinoso@MacBook-Pro-de-Juan ~/Desktop/examen/ExamenFinalOrd (Temporal)$ git commit -m "MD2"
+
+juanlatasareinoso@MacBook-Pro-de-Juan ~/Desktop/examen/ExamenFinalOrd (Temporal)$ git push origin Temporal
+
+
+git add .
+juanlatasareinoso@MacBook-Pro-de-Juan ~/Desktop/examen/ExamenFinalOrd (Temporal)$ git commit -m "MD3"
+
+Despues hemos tenido un problema y lo hemos hecho al reves fusionando la rama main con la temporal de forma qeu hemos tenido que volver atras y realizarlo correctamente
+
+
+juanlatasareinoso@MacBook-Pro-de-Juan ~/Desktop/examen/ExamenFinalOrd ((HEAD desacoplada en 09fea15))$ git checkout 09fea15
+HEAD está ahora en 09fea15 MD3
+juanlatasareinoso@MacBook-Pro-de-Juan ~/Desktop/examen/ExamenFinalOrd ((HEAD desacoplada en 09fea15))$ git merge -s ours main
+Merge made by the 'ours' strategy.
+juanlatasareinoso@MacBook-Pro-de-Juan ~/Desktop/examen/ExamenFinalOrd ((HEAD desacoplada de 09fea15))$ git checkout main
+Peligro: estás saliendo 1 commit atrás, no está conectado
+a ninguna rama:
+
+  ef8db56 Lo requiere el enunciado
+
+Si quieres conservarlo creando una nueva rama, este es un buen momento
+para hacerlo:
+
+ git branch <nuevo-nombre-de-rama> ef8db56
+
+Cambiado a rama 'main'
+Tu rama está adelantada a 'origin/main' por 5 commits.
+  (usa "git push" para publicar tus commits locales)
+juanlatasareinoso@MacBook-Pro-de-Juan ~/Desktop/examen/ExamenFinalOrd (main)$ git merge 09fea15
+
+juanlatasareinoso@MacBook-Pro-de-Juan ~/Desktop/examen/ExamenFinalOrd (main)$ git push origin main
+
+
+Bueno en realidad lo realizado anteriormente esta mal poruq no lo hemos sustituido, pero lo solucionamos con este rebase
+juanlatasareinoso@MacBook-Pro-de-Juan ~/Desktop/examen/ExamenFinalOrd ((HEAD desacoplada en 09fea15))$ git checkout main
+La posición previa de HEAD era 09fea15 MD3
+Cambiado a rama 'main'
+Tu rama está actualizada con 'origin/main'.
+juanlatasareinoso@MacBook-Pro-de-Juan ~/Desktop/examen/ExamenFinalOrd (main)$ git merge 09fea15
+Ya está actualizado.
+juanlatasareinoso@MacBook-Pro-de-Juan ~/Desktop/examen/ExamenFinalOrd (main)$ git rebase 09fea15
+
+El problema es que no quedará registros de la rama
+
+Soy consciente del prblema que ha surgido debido a sustituir las ramas al reves pero lo he solucionado con el rebase y añadiendo el archivo a continuacion, ya que no me funcinaba mergeando la cabeza desacoplada del commit 09fea15
+
+Pasamos a generar el proyecto vaadin
+
+Instalamos vaadin como lo han pedido con mvn archetype:generate
+
+actualizamos
 
